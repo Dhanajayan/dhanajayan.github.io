@@ -12,7 +12,8 @@ app.config(['$routeProvider',
 			controller: 'RouteController'
 		}).
 		otherwise({
-			redirectTo: '/'
+			// redirectTo: '/',
+			templateUrl: 'app/components/design/homeView.html'
 		});
 }]);
 
