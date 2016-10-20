@@ -8,7 +8,7 @@ app.config(['$routeProvider',
 			controller: 'RouteController'
 		  }).
 		when('/route',{
-			templateUrl: 'app/components/home/designView.html',
+			templateUrl: 'app/components/design/designView.html',
 			
 		}).
 		otherwise({
