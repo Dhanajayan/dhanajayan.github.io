@@ -9,7 +9,7 @@ app.config(['$routeProvider',
 		  }).
 		when('/route',{
 			templateUrl: 'app/components/design/designView.html',
-			
+			controller: 'RouteController'
 		}).
 		otherwise({
 			redirectTo: '/'
