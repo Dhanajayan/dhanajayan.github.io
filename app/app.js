@@ -20,4 +20,4 @@ app.config(['$routeProvider',
 
 app.controller("RouteController", function($scope) {
 
- });
+});

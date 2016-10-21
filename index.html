@@ -28,7 +28,7 @@
     </style>
 </head>
 <body ng-app="Portfolio">
-	<nav class="navbar navbar-inverse  navbar-static-top">
+	<nav class="navbar navbar-inverse  navbar-static-top" ng-controller="headerController">
 		  <div class="container">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -40,8 +40,8 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li class="active"><a href="#/">Home</a></li>
-		        <li><a href="#design">Design</a></li>
+		        <li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
+		        <li ng-class="{ active: isActive('/design')}"><a href="#design">Design</a></li>
 		      <!--   <li><a href="#">Portfolio</a></li> 
 		        <li><a href="#">Contact</a></li>  -->
 		      </ul>
@@ -53,6 +53,8 @@
 	   	</div>
 		<script src="assets/js/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" language="javascript" src="assets/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="app/components/home/homeController.js"></script>
 		
 		<script type="text/javascript">
 			// $(document).ready(function() {
