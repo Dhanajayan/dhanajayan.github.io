@@ -1,4 +1,4 @@
-app.Controller('headerController',['$scope',function($scope, $location)
+app.Controller('homeController',['$scope',function($scope, $location)
 {
 	$scope.isActive = function(viewLocation) {
 		return viewLocation === $location.path();
