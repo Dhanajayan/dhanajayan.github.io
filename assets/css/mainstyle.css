@@ -1,0 +1,7 @@
+.vertical-align {
+	display: flex;
+	align-items: center;
+}
+.wrappingdiv {
+	height: 80vh;
+}
