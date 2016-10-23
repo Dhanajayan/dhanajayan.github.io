@@ -1,7 +1,65 @@
+body {
+  background-color: #fff;
+}
+
+/**navbar custom style */
+.dp-nav {
+  background-color: #6699ff;
+  color: #fff;
+}
+.dp-nav a {
+  color: #fff;
+}
+.dp-nav a:hover {
+  color: #fff;
+  background-color: #92b6ff !important;
+}
+.dp-nav a:active {
+  color: #fff;
+  background-color: #92b6ff !important;
+}
+.dp-nav a:focus {
+  outline: none;
+  color: #fff;
+  background-color: #92b6ff !important;
+}
+.dp-nav li.active {
+  color: #fff;
+  background-color: #92b6ff !important;
+}
+.dp-nav .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.dp-jumbotron h1 {
+  font-size: 35px;
+}
+.dp-jumbotron p {
+  font-size: 18px;
+}
+.dp-jumbotron a {
+  color: #11117d;
+}
+.dp-jumbotron .jumbotron {
+  background-color: #5a91ff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-box-shadow: 50px 50px 50px 10px;
+  -moz-box-shadow: 50px 50px 50px 10px;
+  -ms-box-shadow: 50px 50px 50px 10px;
+  box-shadow: 50px 50px 50px 10px;
+}
+
 .vertical-align {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 .wrappingdiv {
-	height: 80vh;
+  height: 80vh;
 }
+
+/*# sourceMappingURL=mainstyle.css.map */

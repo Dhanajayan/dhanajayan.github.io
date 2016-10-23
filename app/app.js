@@ -4,7 +4,7 @@ app.config(['$routeProvider',
 		function($routeProvider){
 		$routeProvider.when('/',{
 			// controller: 'homeController',
-			templateUrl: 'app/components/home/homeView.html',
+			templateUrl: 'app/components/home/homeView.html'
 			// controller: 'homeController'
 		  }).
 		when('/design',{
