@@ -5,10 +5,10 @@ app.config(['$routeProvider',
 		$routeProvider.when('/',{
 			// controller: 'homeController',
 			templateUrl: 'app/components/home/homeView.html',
-			controller: 'RouteController'
+			// controller: 'homeController'
 		  }).
 		when('/design',{
-			templateUrl: 'app/components/design/designView.html',
+			templateUrl: 'app/components/design/designView.html'
 			// controller: 'RouteController'
 		}).
 		otherwise({
