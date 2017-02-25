@@ -1,0 +1,43 @@
+
+
+@import 'helper';
+@import 'font';
+@import 'responsive';
+
+@font-face {
+    font-family: "Noto Sans bold";
+    src: url(fonts/Noto_Sans/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: "Noto Sans regular";
+    src: url(fonts/Noto_Sans/NotoSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Noto Sans Italic";
+    src: url(fonts/Noto_Sans/NotoSans-Italic.ttf);
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Noto Sans bold', san-serif;
+}
+
+body {
+	font-family: 'Noto Sans regular', san-serif;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.box {
+	margin: 0 auto;
+}
+
+.text-gradient {
+   background: -webkit-linear-gradient(#9862AE, #D97D97);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
