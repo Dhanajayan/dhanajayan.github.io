@@ -1,0 +1,39 @@
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.slick-slider {
+			width: 100%;
+			height: 263px;
+		}
+
+		.slick-prev:before, .slick-next:before {
+			color: red !important;
+		}
+		.responsive {
+			background: lightgray;
+		}
+
+		.slick-prev {
+			display: none;
+		}
+
+		.slick-next {
+			display: none;
+		}
+
+		button {
+			display: none;
+		}
+
+                .slick-slide {
+                    height: 248px;
+                }
+
+@media( max-width: 960px ) {
+    .slick-slide {
+        height: 200px;
+    }
+}
+
