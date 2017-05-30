@@ -1,0 +1,46 @@
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+// use of keyframes mixin
+@include keyframes(reveal-menu) {
+  0% {
+    /*background-color: #ffccf2;*/
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  51% {
+
+  }
+  100% {
+   
+  } 
+}
+
+
+// use of keyframes mixin
+@include keyframes(move) {
+  0% {
+    /*background-color: #ffccf2;*/
+    margin-top: -60px;
+  }
+ 
+  100% {
+    margin-top: -10px;
+    opacity: 0;
+  } 
+}
+
