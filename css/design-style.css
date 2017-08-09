@@ -16,6 +16,15 @@ header p {
 	margin-top: 10px;
 	font-size: 14px;
 }
+footer {
+	margin-top: 15px;
+	background-color: #783393;
+	color: #fff;
+}
+footer div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 .image-source-link {
 	color: #98C3D1;
