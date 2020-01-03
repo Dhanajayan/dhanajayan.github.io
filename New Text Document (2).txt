@@ -1,4 +1,0 @@
-<!doctype html>
-<html>
-<input type="file" accept="image/*" capture="camera" />
-</html>
