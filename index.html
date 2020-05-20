@@ -13,20 +13,80 @@
 		<link rel="manifest" href="pwa.webmanifest">
 
 		<!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet"> -->
-		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
 		<style type="text/css">
-			.add-button {
-			  position: absolute;
-			  top: 1px;
-			  left: 1px;
+			body, html {
+				margin: 0;
+				height: 100%;
+				width: 100%;
+				font-size: 14px;
+				background: #F7CF17;
+				font-family: 'Roboto Mono', monospace;
+				display: table;
+			}
+			section {
+				height: 100%;
+				position: relative;
+				margin: 2em;
+				background: #fff;
+				padding: 1em;
+			}
+			main {
+				width: 100%;
+				height: 100%;
+				display: table;
+				text-align: center;
+			}
+			.wrap {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.wrap h2 {
+				font-weight: 400;
+			}
+			.wrap p {
+				font-weight: 300;
+			}
+			footer {
+				position: absolute;
+				width: 100%;
+				bottom: 20px;
+				right: 20px;
+			}
+			footer a {
+				float: right;
+				padding: 5px;
 			}
 		</style>
 	</head>
 	<body>
-		<button class="add-button">Add to home screen</button>
-		<h1>Hello World</h1>
+		<section>
+			<main>
+				<div class="wrap">
+					<h2>Hello, I'M <span style="color: gray;">DHANANJAYAN</span>,<br>Front-end Web Developer<br>Based in India</h2>
+				</div>
+			</main>
+			<footer>
+					<a href="/resume" download>
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAC40lEQVRIicWXzU/TcBjHv926NzbYumCRlQUInXF4QDQcvGCixMQEogdDogmePHnxCgdiODni0cQ/AE+YGGN8u2BiRPFAEHVjEAfZIBsvC+wle+natasHw8vGlHVb4/fW53naT3+fNs2vBI5k9NFTCqTxItSImFvwjN2P7x+SRU1S19NKUy8621oK9WQGwzuarejuDQAfy4MBuDqYwvX+Pls9we8/zSe2ortFNU09AUry38DHVP8t6VgIwe9TAIDO83dhsXfUBK5oxVKew/KsB6yLBuuisTzrgZTnagJXtOJMMgyr3Q6TxQIAsNopZJJhNDW7AADRRBq8kD+YN+h1oG2W2sFmaxuSsRiy6RQgy0jG4uiyOQ/7Rj0MusNLkdqTRVYE1upMcPePYm1xCgQBuPtHoSWNRWClqfjlyoDGnv0eAIAGhaMiVVM9sxDBylYKtKMZAOD9vA4304iBCwwAlVQHIkms7nLo6Tt7UGtlmuFbDKAjkgTLWNVRPbe0DUKjQygQLqprtFrM+XfAMlZ1VA/0MsjyYtleg+HP6aqoZk79+873wUpzIrhUYyUpVW00mMj2TietCFyqsZKUqjaaTSRN2RyKwUrjC+7h8fRPWMwmAEAilTGcY7SsInA1qhNpDjRNo8XRBgCIhDcA7BXNqKLaqBdOnFFFtVGfqR1creqawZWqfvUlhG+BOGQZyOVFmBupg15BJuANS3eGJz5ckQFZFPjpuqm+dZnFQmAe1Ol2WCzmop7T6SScTieVzXI2r9e3JkiFJ3Xb7DUYSDwc6UU0EkSO54/1eUGAz7cU4bnc1beewXhdd5n2JiPGbvcgHAxAFA+/76IkYcnnj3FZbvD15NAGUOYZxxMpcnV9s2q4DAI3L7Xg5dcVdJ3pBkEAgWU/LxWEkTeTQz/250p+YbQbocj2s/XNnapN2JqsjSzb3u126Oz+wK9WWYaYl4QHz8evvat6NUozPDEzPjwxM16u9xtI+A+q7OA3IwAAAABJRU5ErkJggg==" width="30"/>
+						Resume
+					</a>
+					<a href="https://twitter.com/dhananvinay" title="dhananvinay">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAE20lEQVRoge3YW2yTdRgG8Odta8GBzh3KoIOd7BzxiGICISCi3GDigQQmEYMYgk4JckEGKGAaTTSiaAwCTsF5gSEuiiEGvSIalwWIohciCE4YbMDKtnbrTh3t9z5ebMWNfB/raRsXfe6+Nf+3v6f/r/2WP5BOOumkk04SkbF408LdVx5UkRVULiRlGkAniYtUHlEba3xr8g5BhGZrsz6+VBBY574QvbYsULa/290XyvA3vCihVMFLqvyZYeVuQJeREBIACBJg/wVIgsRREa5qfm3Kyeja7O3NswXGJqr86690rx+2wN1fdX1BSuYpZ0Y5ysVIFj9tR4ubDjks4PR+sCV+4FraCW4leS+IRSQLSPjtevWelg3FzTcs4PmB45z+nlaAEwF8OSl/wuqfF0gkUXxR9bnxRui2WoAPx4aH2WsRIZa0VeYfHDzbZvaG4/w99w/gQXJlc2P3gZlVzEi0QKR34tok8d0gl9t49VjWtguvZL3X9DpIsSxAgXvwYIBPdo0P1pXtDZbFrffSIYINSeABsJHA9jAclwFZB/btin7JTQuIoZ3/L44Okhm083hpdXsFvDRdZ5Z8V+s8ErlJ4EFiOsmpAJoiEXkqsOnOjuh8U0jYbjQMxV8bNIHEbk9Bx6/F1f55sRQQG+9LEj/wd/7uIGd1vjH1zOD5pgXO/JPZAEiD+SCA5ENiyC/FewK1hZ8FFqOGdqsCpM2VPB5nx4nzkdaNBZeun29+K3hFCe658ScHgJwr4IHCQNvloqq2qsJPrzxRsKs9a/AoobYmiQfJdl/l5G4zquVzwLOv7XZbxPEHiRJTvEUxgCRxhorTAjYaQB7IJYnjAYJ1wY0Fc82cDqsC9c/nBD3VHctBHgaQESMe7H/ClkFYpkR0QeL4/teCVk7TW6i0uuO5u6qDNYDhAvACSV+M+GR+Kq3wAHntf5/rY7EDbFFyKWBbGscnPzJ4EArWWxUw3QGbho8CCN8MeBIQ4nhcBU6vcnWS+t3NgCcZ7go7j8VVAADE4Fsk+sYYDwhq4XX3xF2g/qWcvwCuH1M8ACq+tTLesAAAnFudvZPK9QAiY4In+2yRyDcJFwCA8xU5H0Iwn2TdKOMBYH+X13MlqQKFVS1TDDXuEOhGAl4q/KOBJ6E2MbYP57N8Ekdjh71HaXytlIkkABkVPATY17XZc2I437A7cPbl7A6lvDNat80APkgxtgxni6kAAFzMzdkG8NBo4AFAicreLZ7GlBVAuRiRHn1Wge9HGg/yYGhr0ecxuWIuAMBXObm7eY3raSVXkWgYCTzJU71qrLA61DJLYidzNbS7mi7PgU3mULkMwIwU4M9D5dGQt7ghHkrMOzAk5WKEpe9PKksBPJAavP2xePFAAjvg/uBSbtiBCirWApiUAvwRux2LuzeX+OK1xFwg7yNfCYQLCH2clGdI3joUkhBeobqjl7ZN8BYnfP46tAApU3e2LIoAFSBzQbpITCajp3Sp+cIScgLUV0NvltQmCjcvMJD8T5pyIoZjM4DVKcVD6qn6dkiL98ErmizeskA0ee83T1Anl0CxkuR8AJIAPqDKHwnZG9pS+FM8P5FJFxiczHfPZ9lucc4W6iwRzlQin2Q2BDlUjCfZSSIA0KeUk4D+rWBtr6fot1Qcz6eTTjrppDMi+Q8fgF/hmeYFBwAAAABJRU5ErkJggg==" alt="dhananvinay" width="25"/>
+					</a>
+					<a href="https://github.com/Dhanajayan" title="Dhanajayan">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAEiUlEQVR4nO2aW4hWVRTHf+pcHHNMJxA1QR2VQXsIpZggpQulkIGX3qQeMiOUoF4UQx+KHuypy0ugDz6kXd4sHVGxiyEYijmGGWqQQmNTTlOO12Kc+XxYZ5qv497n7LXPOXsGPT9YMBzWWf+19jdn36GkpKTkLmZEQK1aYDbQAkwFxkc2CrgGXAY6gNPAGeBqwNwKowXYCHwNXAcqjtYHHAM2AwsJ+0Nlph5YBXyPe8FpdhbYANwXsA41tcBaoJP8Co9bD/AmMC5MSe4sRL7dogqPWyewIkhlKdQC7yLfbKjiq+0zoLHwKi1MAQ6nJBjCfgRmFlzrbcwCfsmYeJ72JzC/0IqrmE2xHZ2vdROgEe4Hzg1xoUnWBTQXVXw9cGQYFJlmP1HQMPmhg/hipH94AdgJ9OZQUD/wFbAGeBDpfNNGnY/yLn5RlEiS6F/AyNh7zchQ5Vv8QWCeIZ8zDu8uyVjzfzQA5x0EDyXEWIbM4irIr/czMoTujuwwMt29WeWzDvsa4IBDPr8CY9XVGljvIFYB2lLizAWWA00JPo3A08BTKbG+cMzpjZQ4qTQi/9ouYp9nFVOw0zGnbuDepEDxbzbOKmCCY1LjHf3ywDWnJmB1FqGzuHdYp7IIKTkZIq+HFCIDHVeI9XoTg52lqz1iC5b0CTynTKydMNtY14Djynee9RHSzPquEHZFNoPBYdXFjmoF7kE3i3s7SzWebFLkdxPl9Hi+IngPYUeAAcYiy2DXPFtNQWx9QIsikTbgksI/L64CuxT+c0wPbQ0wWRE45AQojqYBjH2UrQGSpqtxTip88+a0wtfYB9gaYLQi8G8K37y5oPA1ToltDdCrCNyv8B1K6k0PbQ3wjyKwpr/ImykK3xumh7YG+F0R2LRhEQqNdo/poa0BNN/1UJ7QaLQ7NIGbcZ9g/ItslYemJdJ2zXO5JvgIZHLjGnwv6XsLeTIS2K/IrwJM14q0KQXe869HzQfK3P7wEXlNKVJBtqMb/Gpyoh7Y4pHXDh+xaaRvhZusHXjMRzCFJ4AfPPKpACt9Rb/1FKwA+4ClQI2vePTuMvTfe7VdQZb3Xqy0BD2PLERclqMXgU9I2JYy8Gj0TpdjkUm2VV/2IDWYD0V2IcvLCdHfaUnsB8YodJuQc/+sxfcj5xGZeMkSvBO57laHnN3ZkugGJnrotuLXB1Xbdg/d2xgFnLAIbIt8JiGzR5PPOxm0Xf67kr59zVohkVbMW9E3GLyjsyASjfs8nEH3eUM8V9uQQdfIZotQ9RTzAWAPcimyA/gY+UR8mWXRTLN2LMvfLNQA3xjEDuQtVEWDQS/NuvCY9royETnajou+WpSgQSvJeoEnC8wFkEOJjphwH/AWuq00V1yL7wNe1gb3vYQ8Exnb4zutfwNfIpcTxiGXqp7x1Big4uDTC7yI9DnBmITbRcmspMW/jufZXx7UAe+TPGHJSlLxpwh4QTKJxzF3jkU1QD+y/1BEn+NNHfA6/1/AaHaXbcSvxB1CbqcPW8YArwDfkc+p8adI4QcJMMQNV4bi9LmkpKSk5I7nFmyeHvqmMEpLAAAAAElFTkSuQmCC" alt="Dhanajayan" width="25"/>
+					</a>
+					<a href="https://www.linkedin.com/in/dhanajayan" title="dhanajayan">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAACjklEQVRoge2ZT2gTQRTGv9m0pu0mEAu2ikuJDQqCNNbWniJ6qViwFg+i0osXvTeCDfSmElIPAQ8eRK8FsQiilXqzgvWgLbbpQRFUrD0YW0ItCSbY3edFlCQ7SSd1divM7/bmvZ39vn37Z3YXUCgUCjdh1Qo8idQAiIaIoRuA7oAmAMgR2GsNlDRj4ceVCisa0EbnEiA2/G+1CRO3YuERXpJrwJNIDRDooRxNYjCN+s0rByfschp3K6IhaYoEsSwW5eW4BoihS44ccRjQzcvxOwD4JGipFT8vUcmALfuavZgaDGEtegDPB0PYu927OWmbRNjAnT4DRwwder2GiKHjdp8hQ9eGETbQ2dpYFHeVxE4jbOBN+kdRPFsSO42wgYuTS3ixlEPup4WpxSwuTX6RoWvD1Ilu8D5TwNGxDzK01IRwB7Yawh0whzvKxjyjqar53f56XO7Zgd6gD+0BLwqmhYXlPO6/XcXd+QwKJolKAVCDgVoItzTg6dl2tDT93V1DnQcRQ0fE0HGhoxn945/wNbcuPLcjp9D46WCR+FIOtTZi7FRb9bW9DY4YCAW2Va051ubDiRB3xcDFEQMWATdnVtB77yPOP1rEs89Z27pz+wPCcztyDVydTuPadPpP/ODdd0ycCeL4nuIj3rOrSXhuRzpwa3alKDaJEH/5raxupy5+PKUbIACZvFk2vrCcLxvzez3C80s3wLuzrBbKTW3Zu5BMlAG3UQbcRhlwm//eAPfZoSXma3vDkIQVC9tqrdQB+yWjK7A1Xob/bRRsRo4YcQjE1cI1oIGScuSIo8HiauEa+P1nJC5FkRB03Yx1PuFlq/9iujF30rJYlAGH4dwX6ywBrzRYyUriFQqFwn1+AXvFo7bcPPZdAAAAAElFTkSuQmCC" alt="dhanajayan" width="25"/>
+					</a>
+			</footer>	
+		</section>
+		
   		<script type="text/javascript">
-  			
+  			document.addEventListener('DOMContentLoaded', (event) => {
+			    document.getElementsByTagName("section")[0].style.height = (window.innerHeight - 85) + "px";
+			});
   		</script>
 	</body>
 </html>
